@@ -128,20 +128,100 @@ var receiveTodo = function receiveTodo(todo) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ "./frontend/components/app.jsx");
 
 
 
 
-var Root = function Root(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
-    store: props.store
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "WHATEVER THIS IS ON ROOT"));
+var Root = function Root(_ref) {
+  var store = _ref.store;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_1__["Provider"], {
+    store: store
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Root);
+
+/***/ }),
+
+/***/ "./frontend/components/app.jsx":
+/*!*************************************!*\
+  !*** ./frontend/components/app.jsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _todos_todo_list_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./todos/todo_list_container */ "./frontend/components/todos/todo_list_container.jsx");
+
+
+
+var App = function App(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "App Component"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_todos_todo_list_container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    store: props.store
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./frontend/components/todos/todo_list.jsx":
+/*!*************************************************!*\
+  !*** ./frontend/components/todos/todo_list.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/appacademy/Desktop/w7d1/toodoos/frontend/components/todos/todo_list.jsx: Unexpected token, expected \",\" (8:5)\n\n\u001b[0m \u001b[90m  6 | \u001b[39m    {props\u001b[33m.\u001b[39mtodos\u001b[33m.\u001b[39mmap( todo \u001b[33m=>\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m  7 | \u001b[39m       todo\u001b[33m.\u001b[39mtitle\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 | \u001b[39m    )}\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m  \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mul\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m  )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m\u001b[0m\n    at Object.raise (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:6344:17)\n    at Object.unexpected (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:7659:16)\n    at Object.expect (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:7645:28)\n    at Object.parseCallExpressionArguments (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8605:14)\n    at Object.parseSubscript (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8515:29)\n    at Object.parseSubscripts (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8434:19)\n    at Object.parseExprSubscripts (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8423:17)\n    at Object.parseMaybeUnary (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8393:21)\n    at Object.parseExprOps (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8280:23)\n    at Object.parseMaybeConditional (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8253:23)\n    at Object.parseMaybeAssign (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8200:21)\n    at Object.parseExpression (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8148:23)\n    at Object.jsxParseExpressionContainer (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:3450:30)\n    at Object.jsxParseElementAt (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:3544:36)\n    at Object.jsxParseElement (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:3587:17)\n    at Object.parseExprAtom (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:3594:19)\n    at Object.parseExprSubscripts (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8413:23)\n    at Object.parseMaybeUnary (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8393:21)\n    at Object.parseExprOps (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8280:23)\n    at Object.parseMaybeConditional (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8253:23)\n    at Object.parseMaybeAssign (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8200:21)\n    at Object.parseParenAndDistinguishExpression (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8963:28)\n    at Object.parseExprAtom (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8760:21)\n    at Object.parseExprAtom (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:3599:20)\n    at Object.parseExprSubscripts (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8413:23)\n    at Object.parseMaybeUnary (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8393:21)\n    at Object.parseExprOps (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8280:23)\n    at Object.parseMaybeConditional (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8253:23)\n    at Object.parseMaybeAssign (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:8200:21)\n    at Object.parseFunctionBody (/Users/appacademy/Desktop/w7d1/toodoos/node_modules/@babel/parser/lib/index.js:9390:24)");
+
+/***/ }),
+
+/***/ "./frontend/components/todos/todo_list_container.jsx":
+/*!***********************************************************!*\
+  !*** ./frontend/components/todos/todo_list_container.jsx ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _todo_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo_list */ "./frontend/components/todos/todo_list.jsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _reducers_selectors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../reducers/selectors */ "./frontend/reducers/selectors.js");
+
+
+
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    todos: Object(_reducers_selectors__WEBPACK_IMPORTED_MODULE_2__["allTodos"])(state)
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    receiveTodo: function (_receiveTodo) {
+      function receiveTodo(_x) {
+        return _receiveTodo.apply(this, arguments);
+      }
+
+      receiveTodo.toString = function () {
+        return _receiveTodo.toString();
+      };
+
+      return receiveTodo;
+    }(function (todo) {
+      return dispatch(receiveTodo(todo));
+    })
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps)(_todo_list__WEBPACK_IMPORTED_MODULE_0__["default"])); // module.exports = () => <h3>Todo List goes here</h3>
 
 /***/ }),
 
@@ -159,9 +239,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  todos: _todos_reducer__WEBPACK_IMPORTED_MODULE_1__["todosReducer"]
+  todos: _todos_reducer__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (rootReducer);
+
+/***/ }),
+
+/***/ "./frontend/reducers/selectors.js":
+/*!****************************************!*\
+  !*** ./frontend/reducers/selectors.js ***!
+  \****************************************/
+/*! exports provided: allTodos */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allTodos", function() { return allTodos; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var allTodos = function allTodos(_ref) {
+  var todos = _ref.todos;
+  // return Object.keys(todos).map( id => todos[id] )
+  // const result = [];
+  // Object.keys(todos).forEach( todoKey => {
+  //   result.push(todos[todoKey] );
+  // });
+  // return result;
+  return Object.values(todos);
+};
 
 /***/ }),
 
@@ -176,12 +282,53 @@ var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])(
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_todos_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/todos_actions */ "./frontend/actions/todos_actions.js");
 
+var initialState = {
+  1: {
+    id: 1,
+    title: 'wash car',
+    body: 'with soap',
+    done: false
+  },
+  2: {
+    id: 2,
+    title: 'wash dog',
+    body: 'with shampoo',
+    done: true
+  }
+}; //this const is just for testing purposes
+//dont even wurrboutit
+
+var newTodos = [{
+  id: 7,
+  title: 'practice typing',
+  body: 'with style',
+  done: true
+}, {
+  id: 82,
+  title: 'breaking things',
+  body: 'moving fast',
+  done: false
+}];
 
 var todosReducer = function todosReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
+  Object.freeze(state);
+  var nextState = Object.assign({}, state);
 
   switch (action.type) {
+    case _actions_todos_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_TODOS"]:
+      //we have to deal with the array of todos
+      var cleanState = {};
+      action.todos.forEach(function (todo) {
+        return cleanState[todo.id] = todo;
+      });
+      return cleanState;
+
+    case _actions_todos_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_TODO"]:
+      nextState[action.todo.id] = action.todo;
+      return nextState;
+
     default:
       return state;
   }
@@ -232,6 +379,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./store/store */ "./frontend/store/store.js");
 /* harmony import */ var _components_Root__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Root */ "./frontend/components/Root.jsx");
+/* harmony import */ var _actions_todos_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./actions/todos_actions */ "./frontend/actions/todos_actions.js");
+/* harmony import */ var _reducers_selectors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reducers/selectors */ "./frontend/reducers/selectors.js");
+
+
 
 
 
@@ -240,6 +391,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var root = document.getElementById('content');
   var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
   window.store = store;
+  window.receiveTodo = _actions_todos_actions__WEBPACK_IMPORTED_MODULE_4__["receiveTodo"];
+  window.receiveTodos = _actions_todos_actions__WEBPACK_IMPORTED_MODULE_4__["receiveTodos"];
+  window.allTodos = _reducers_selectors__WEBPACK_IMPORTED_MODULE_5__["allTodos"];
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Root__WEBPACK_IMPORTED_MODULE_3__["default"], {
     store: store
   }), root);
